@@ -1,4 +1,4 @@
-from flask import Flask, render_template, Response, request, flash, redirect, url_for
+from flask import Flask, render_template, request
 from blink_count import eye_blink
 
 
@@ -15,4 +15,4 @@ def index():  # put application's code here
 
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(debug=True, port=8080)
